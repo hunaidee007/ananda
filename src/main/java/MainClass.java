@@ -27,7 +27,15 @@ public class MainClass {
 
      savingsAccount.withdraw(750)*/;
 
-     CurrentAccount currentAccount = new CurrentAccount("M", 1100,1985);
+    CurrentAccount currentAccount = new CurrentAccount("M", 1100,1985);
+        CurrentAccount currentAccount1 = new CurrentAccount("M", 1100,1985);
+
+        CurrentAccount currentAccount2 = new CurrentAccount("M", 1100,1985);
+
+        CurrentAccount currentAccount3 = new CurrentAccount("M", 1100,1985);
+
+        doSomethingWithAccount(currentAccount);
+    System.out.println("Heere");
 
 
     }
@@ -38,11 +46,13 @@ public class MainClass {
         System.out.println("value of j : " + j);
     }
 
-    public static void doSomethingWithAccount(Account account) throws Exception { // Account account = account
+    public static void doSomethingWithAccount(Account account) throws Exception { // Account account = currentAccount
 
         System.out.println("value of account.getBalance() : " + account.getBalance());
         account.setBalance(200);
         System.out.println("value of account.getBalance() : " + account.getBalance());
+
+        CurrentAccount tempAccount = new CurrentAccount("M", 1100,1985);
 
 
     }
