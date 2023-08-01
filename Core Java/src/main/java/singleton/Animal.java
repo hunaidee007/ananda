@@ -8,9 +8,18 @@ public class Animal {
 
     static int currentYear = 2023;
 
-    public Animal(int birthYear, String name) {
+    private static Animal animal;
+
+    private Animal(int birthYear, String name) {
         this.birthYear = birthYear;
         this.name = name;
+    }
+
+    public static Animal getInstance() {
+        if (animal == null) {
+            animal = new Animal(1990,"N");
+        }
+        return animal;
     }
 
     public int getAge(){
