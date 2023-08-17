@@ -8,6 +8,7 @@ public class CallableTest {
         MyCallable myCallable = new MyCallable();
         MyCallable myCallable1 = new MyCallable();
         MyCallable myCallable2 = new MyCallable();
+        System.out.println();
 
         ExecutorService executorService = Executors.newFixedThreadPool(2);
 
