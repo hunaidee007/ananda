@@ -25,6 +25,9 @@ public class Student {
 
     String rollNumber;
 
+    public Student() {
+    }
+
     public String getRollNumber() {
         return rollNumber;
     }
